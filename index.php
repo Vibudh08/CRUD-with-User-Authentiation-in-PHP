@@ -9,7 +9,7 @@
       <div class="row">
         <h1>Home Page</h1>
         <hr />
-        <p>CRUD Operations with User Authorization in PHP and mySql.</p>
+        <p>CRUD Operations with User Authentication in PHP and mySql.</p>
       </div>
       <button type="submit" class="btn btn-primary">
         <a class="nav-link" href="register.php">Register</a>

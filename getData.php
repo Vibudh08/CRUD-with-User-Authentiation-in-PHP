@@ -8,17 +8,17 @@ if(isset($_POST['name'])){
     $name = $_POST['name'];
     $age = $_POST['age'];
     $course = $_POST['course'];
-    
-    $sql = "INSERT INTO crud (name,age,course) VALUES('$name','$age','$course') ";
-    $result = mysqli_query($conn,$sql);
-    if($result){
-        // echo "Data inserted";
-    }else{
-        die(mysqli_error($conn));
+    if($name && $age && $course){
+        $sql = "INSERT INTO crud (name,age,course) VALUES('$name','$age','$course') ";
+        $result = mysqli_query($conn,$sql);
+        if($result){
+            // echo "Data inserted";
+        }else{
+            die(mysqli_error($conn));
+        }
     }
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">

@@ -1,7 +1,7 @@
 <?php
 include("connect.php");
 include("./includes/header.php");
-include("./auth.php");
+// include("./auth.php");
 
 
 if(isset($_GET['id'])){
